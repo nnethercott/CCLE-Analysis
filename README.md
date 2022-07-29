@@ -4,4 +4,4 @@ Statistical analysis of breast cancer data.
 
 |**Languages** | **Libraries** |
 | -----| ---- |
-|![R](<i class="fa-brands fa-python"></i>) ![Java](https://img.shields.io/badge/Java-blue)| ![Numpy](https://img.shields.io/badge/Numpy-1.19.5-brightgreen) ![Flask](https://img.shields.io/badge/Pillow-9.1.0-brightgreen) ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.1-brightgreen)
+|![R](https://img.shields.io/badge/R-ff1111) ![Python](https://img.shields.io/badge/Python-11ffff)| ![Numpy](https://img.shields.io/badge/Numpy-1.19.5-11ff11) ![BS4](https://img.shields.io/badge/BS4-version-11ff11)
