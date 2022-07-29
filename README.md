@@ -1,6 +1,9 @@
 # CCLE-Analysis
 
-#maybe add a pic here 
+<p align="center">
+    <img src="./media/pcna.png" height="350" alt="pcna_nate"/>
+    <img src="./media/reg1a.png" height="350" alt="reg1a_luca"/>
+</p>
 
 |**Languages** | **Libraries** |
 | -----| ---- |
