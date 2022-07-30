@@ -7,7 +7,7 @@
 
 |**Languages** | **Libraries** |
 | -----| ---- |
-|![R](https://img.shields.io/badge/R-ff1111) ![Python](https://img.shields.io/badge/Python-11ff11)| ![Numpy](https://img.shields.io/badge/Numpy-1.19.5-11ff11) ![Pandas](https://img.shields.io/badge/Pandas-1.2.4-11ff11) ![BS4](https://img.shields.io/badge/BS4-4.11.1-11ff11) <br /> ![dplyr](https://img.shields.io/badge/dplyr-1.0.8-ff1111) ![zoo](https://img.shields.io/badge/zoo-1.8.10-ff1111) ![glmnet](https://img.shields.io/badge/glmnet-4.1.4-ff1111) ![purrr](https://img.shields.io/badge/purrr-0.3.4-ff1111)
+|![R](https://img.shields.io/badge/R-ff1111) ![Python](https://img.shields.io/badge/Python-11ff11)| ![Numpy](https://img.shields.io/badge/Numpy-1.19.5-11ff11) ![Pandas](https://img.shields.io/badge/Pandas-1.2.4-11ff11) ![BS4](https://img.shields.io/badge/BS4-4.11.1-11ff11) <br /> ![dplyr](https://img.shields.io/badge/dplyr-1.0.8-ff1111) ![glmnet](https://img.shields.io/badge/glmnet-4.1.4-ff1111) ![caret](https://img.shields.io/badge/caret-6.0.92-ff1111) ![ISLR](https://img.shields.io/badge/ISLR-1.4-ff1111) ![leaps](https://img.shields.io/badge/leaps-3.1-ff1111)
 
 <a name="description"/>
 
@@ -78,7 +78,7 @@ One should be wary of these results however, since the dataset is quite small an
 
 The main effort of this project was to predict the auc score on a given cell using the genetic and physiological information of the patient.  Before such analysis could be undertaken, however, it was necessary to reduce the dimensionality of the feature space since over 50000 gene expressions were included in the provided dataset. To do this, a LASSO regression model was implemented and the genes corresponding to the non-zero coefficients were retained. 
 
-This gene pool was cross-refernced with the outcome of similar efforts in dimensionality reduction using random forests, and the intersection of the chosen genes from each method was kept.  Furthermore, the identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
+This gene pool was cross-refernced with the outcome of similar efforts in dimensionality reduction using random forests, and the intersection of the chosen genes from each method was kept.  After this, exhaustive search was applied to the reduced gene pool to find the best selection of regressors for models with *p=1...n*-dimensional feature spaces. The identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
 
 To account for the limited number of samples present in the cleaned dataset (removal of NA's and non-relevant cancer-treating drugs) k-fold cross validation was used.  The (k=5) cross-validated R^2 values during the training phase for each fold were: 0.746, 0.770, 0.758, 0.745, and 0.786.
 
