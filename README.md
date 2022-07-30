@@ -7,7 +7,7 @@
 
 |**Languages** | **Libraries** |
 | -----| ---- |
-|![R](https://img.shields.io/badge/R-ff1111) ![Python](https://img.shields.io/badge/Python-ff11ff)| ![Numpy](https://img.shields.io/badge/Numpy-1.19.5-11ff11) ![Pandas](https://img.shields.io/badge/Pandas-1.2.4-11ff11) ![BS4](https://img.shields.io/badge/BS4-4.11.1-11ff11)
+|![R](https://img.shields.io/badge/R-ff1111) ![Python](https://img.shields.io/badge/Python-11ff11)| ![Numpy](https://img.shields.io/badge/Numpy-1.19.5-11ff11) ![Pandas](https://img.shields.io/badge/Pandas-1.2.4-11ff11) ![BS4](https://img.shields.io/badge/BS4-4.11.1-11ff11) <br /> ![dplyr](https://img.shields.io/badge/dplyr-1.0.8-ff1111) ![zoo](https://img.shields.io/badge/zoo-1.8.10-ff1111) ![glmnet](https://img.shields.io/badge/glmnet-4.1.4-ff1111) ![purrr](https://img.shields.io/badge/purrr-0.3.4-ff1111)
 
 <a name="description"/>
 
