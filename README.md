@@ -49,7 +49,7 @@ A collection of utilities and preprocessing scripts are included in the utilitie
 *Note:* in the following section the terms "AUC" or "AUC score" are equivalent to "drug efficacy". 
 ### Hierarchical Classification 
 <p align="center">
-    <img src="./media/pcna.png" height="350" alt="pcna_nate"/>
+    <img src="./media/hierarchical.png" height="350" alt="pcna_nate"/>
 </p>
 
 One vein of analysis was to consider the clusters arising from applying heirarchical clustering (euclidean distance, single linkage) to a reduced dataset containing only two cancers which in theory should be quite different in their manifestation.  We prove the merit of this approach using samples corresponding to breast and central nervous system cancers. 
@@ -58,7 +58,8 @@ One vein of analysis was to consider the clusters arising from applying heirarch
 
 ### Drug Response AOV 
 <p align="center">
-    <img src="./media/pcna.png" height="350" alt="pcna_nate"/>
+    <img src="./media/aov_lab.png" height="350" alt="pcna_nate"/>
+    <img src="./media/aov_ethnicity.png" height="350" alt="pcna_nate"/>
 </p>
 
 Given the heterogeneous nature of the dataset (many data sources, high sparsity) it was crucial to investigate the influence of categorical variables which described inherent differences in each data sample.  This list includes: `Sex`, `Ethnicity`, `Cell Line Source`, `Age`. 
@@ -73,12 +74,16 @@ One should be wary of these results however, since the dataset is quite small an
 
 ### AUC Regression 
 <p align="center">
-    <img src="./media/pcna.png" height="350" alt="pcna_nate"/>
+    <img src="./media/model_summary.png" height="350" alt="pcna_nate"/>
 </p>
 
 The main effort of this project was to predict the auc score on a given cell using the genetic and physiological information of the patient.  Before such analysis could be undertaken, however, it was necessary to reduce the dimensionality of the feature space since over 50000 gene expressions were included in the provided dataset. To do this, a LASSO regression model was implemented and the genes corresponding to the non-zero coefficients were retained. 
 
 This gene pool was cross-refernced with the outcome of similar efforts in dimensionality reduction using random forests, and the intersection of the chosen genes from each method was kept.  After this, exhaustive search was applied to the reduced gene pool to find the best selection of regressors for models with *p=1...n*-dimensional feature spaces. The identified genes were researched to see whether or not they have been previously identified as being influential in breast cancer expression.  In the end, the feature space was reduced to 8 significant genes (our regressors). 
+
+<p align="center">
+    <img src="./media/selected_genes.png" height="350" alt="pcna_nate"/>
+</p>
 
 To account for the limited number of samples present in the cleaned dataset (removal of NA's and non-relevant cancer-treating drugs) k-fold cross validation was used.  The (k=5) cross-validated R^2 values during the training phase for each fold were: 0.746, 0.770, 0.758, 0.745, and 0.786.
 
