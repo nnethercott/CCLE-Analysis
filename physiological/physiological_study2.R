@@ -1,7 +1,6 @@
 ######################## IDEAS DISCUSSED ########################
-# - group effects introduced by collection lab on auc
+# - explore group effects introduced by categorical variables 
 # - 
-
 #################################################################
 
 features = read.delim(file.path(getwd(), "physiological.csv"), header = TRUE, sep=",")

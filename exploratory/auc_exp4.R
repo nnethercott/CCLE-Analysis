@@ -1,3 +1,10 @@
+######################## IDEAS DISCUSSED ########################
+#' - prereq for auc_exp4.2.R
+#' - shows the validity of a hierarchical clustering-based classifier
+#' - high accuracy on our limited training set, with accuracy improving as
+#'   we cluster on the PC's and remove sparse drug entries 
+#################################################################
+
 source("../utils/nate_utils.R")
 source("../utils/exp_base_script.R")
 

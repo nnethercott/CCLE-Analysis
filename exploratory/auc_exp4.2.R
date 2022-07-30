@@ -1,3 +1,11 @@
+######################## IDEAS DISCUSSED ########################
+#' - clustering to create a hierarchical classifier between cancers
+#' - idea was that two very different cancers (e.g. breast and brain)
+#'   would be characterized by having different features. We would 
+#'   exploit this in a clustering setting by making a simple classifier
+#' - Not useful in practice 
+#################################################################
+
 source("../utils/nate_utils.R")
 source("../utils/exp_base_script.R")
 library(zoo)

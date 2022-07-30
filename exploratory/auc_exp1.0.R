@@ -1,3 +1,7 @@
+######################## IDEAS DISCUSSED ########################
+#' - DEPRECATED; util already implemented  
+#################################################################
+
 str_util <- function(str_arr){
   to_return = c(NULL)
   for(n in 1:length(str_arr)){

@@ -1,3 +1,7 @@
+######################## IDEAS DISCUSSED ########################
+#' - attempt in R at seeing similarities between drugs classified as TKI
+#################################################################
+
 #imports 
 source("./utils/nate_utils.R")
 source("./utils/exp_base_script.R")

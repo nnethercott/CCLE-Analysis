@@ -1,3 +1,9 @@
+######################## IDEAS DISCUSSED ########################
+#' - treat drug auc scores as samples, try to visualize differences 
+#'   in groups of drugs targeting same cancers 
+#'- only use cancers with sufficient number of samples
+#################################################################
+
 #get our utils
 source("./utils/nate_utils.R")
 

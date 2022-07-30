@@ -1,4 +1,7 @@
-#attempt at clustering drugs for a specific cancer type
+######################## IDEAS DISCUSSED ########################
+#' - attempt at clustering drugs for a specific cancer type
+#' - foray into classfiers  
+#################################################################
 
 source("../utils/nate_utils.R")
 source("../utils/exp_base_script.R")

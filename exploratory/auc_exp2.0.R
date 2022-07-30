@@ -1,3 +1,8 @@
+######################## IDEAS DISCUSSED ########################
+#' - Exploring normality and variance of our data on a cancer-wide basis 
+#' - hoped a LDA or QDA model would present itself if normality proved 
+#################################################################
+
 source("./utils/nate_utils.R")
 source("./utils/exp_base_script.R")
 

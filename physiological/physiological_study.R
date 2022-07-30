@@ -1,3 +1,9 @@
+######################## IDEAS DISCUSSED ########################
+#' - Hoping to see multiple linear regression paradigm present itself
+#'   when we consider physiological data.  For instance, maybe we can
+#'   model auc score when considering sex, ethnicity and age 
+#################################################################
+
 #PART 0: Check some properties of the data 
 features = read.delim(file.path(getwd(), "physiological.csv"), header = TRUE, sep=",")
 dim(features)

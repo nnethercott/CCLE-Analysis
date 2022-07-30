@@ -1,3 +1,7 @@
+######################## IDEAS DISCUSSED ########################
+#' - DEPRECATED 
+#################################################################
+
 #REPLACE W YOUR PATH 
 mrna = read.delim(file.path("../Dataset", "data_mrna_seq_rpkm.txt"), header = TRUE, comment.char = '#', nrows=1000)
 
