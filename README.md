@@ -58,8 +58,8 @@ One vein of analysis was to consider the clusters arising from applying heirarch
 
 ### Drug Response AOV 
 <p align="center">
-    <img src="./media/aov_lab.png" height="350" alt="pcna_nate"/>
-    <img src="./media/aov_ethnicity.png" height="350" alt="pcna_nate"/>
+    <img src="./media/aov_lab.png" height="300" alt="pcna_nate"/>
+    <img src="./media/aov_ethnicity.png" height="300" alt="pcna_nate"/>
 </p>
 
 Given the heterogeneous nature of the dataset (many data sources, high sparsity) it was crucial to investigate the influence of categorical variables which described inherent differences in each data sample.  This list includes: `Sex`, `Ethnicity`, `Cell Line Source`, `Age`. 
