@@ -34,6 +34,7 @@ The project itself uses the following files from the CCLE database:
 - *data_clinical_sample.txt*
 - *data_drug_treatment_auc.txt*
 - *data_mrna_seq_rpkm.txt*
+<br>
 For seamless integration with the existing code, download and save these files in a directory denoted `Dataset` stored in the root. 
 
 On the R side, loading the project in R Studio should prompt to load any missing packages you have.  For the Python-dependent code (used mainly for exploratory purposes) simply pip install from `requirements.txt` as such:
